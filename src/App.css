@@ -1,0 +1,73 @@
+/* App.css */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.image-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 20px;
+}
+
+.single-image {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.single-image img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.single-image:hover img {
+  transform: scale(1.05);
+}
+
+.performance-data {
+  margin-top: 20px;
+}
+
+.performance-data h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.performance-data p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.performance-data ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.performance-data li {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.button {
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
